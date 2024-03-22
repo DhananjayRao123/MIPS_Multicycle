@@ -21,3 +21,5 @@ Contains instantiation of all sub-modules of the processor. This is the top modu
 7) mem.v - Contains the combined instruction and data memory, along with the PC register. Its outputs are the IR and MDR registers.
 
 8) Register_file.v - Contains all the 16 registers, along with the A and B registers as outputs.
+
+![State Diagram](https://github.com/DhananjayRao123/MIPS_Multicycle/blob/main/Screenshot%202024-03-23%20002351.png)
