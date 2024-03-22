@@ -1,4 +1,3 @@
-
 module multi_cycle (clk, rst_n);
 
 input clk;
@@ -7,6 +6,9 @@ input rst_n;
 wire [31:0]instruction;
 wire PCWriteCond, PCWrite, IorD, MemRead, MemWrite, MemtoReg, IRWrite, PCSource, ALUSrcA, RegDst, RegWrite;
 wire [1:0] ALUOp, ALUSrcB;
+
+
+                                                                                                                                                                
 wire zero;
 wire [4:0] write_reg;
 wire [31:0] A, B, write_data, ALU_in1, ALU_in2, ALUOut, PC_choose, MDR, PC, ALU_result, snex;
