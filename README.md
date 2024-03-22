@@ -2,6 +2,7 @@
 
 This is an implementation of a simple MIPS multicycle 32 bit processor. It can currenty execute R type and Conditional branch instructions, but can easily be modified to fit in immediate, data accesss and jump instructions by modifying the control unit to include more states for the same.
 
+![Block Diagram](https://github.com/DhananjayRao123/MIPS_Multicycle/blob/main/Screenshot%202024-03-21%20224550.png)
 
 Here is a brief description of all the modules:
 1) multi_cycle.v - module multi_cycle
