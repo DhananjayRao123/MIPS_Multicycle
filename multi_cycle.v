@@ -14,11 +14,13 @@ wire [4:0] write_reg;
 wire [31:0] A, B, write_data, ALU_in1, ALU_in2, ALUOut, PC_choose, MDR, PC, ALU_result, snex;
 wire [31:0] IR;
 
-assign snex = {instruction[15],instruction[15],instruction[15],instruction[15],instruction[15],instruction[15],instruction[15] ,instruction[15] ,  instruction[15] ,instruction[15] ,instruction[15] ,instruction[15] ,instruction[15] ,instruction[15] ,instruction[15] ,instruction[15] ,instruction[15:0]};
 
 wire [31:0] shift;
 assign shift = snex<<2;
 
+parameter amt = 16;
+assign snex = { {amt{instruction[15]}}, instruction[15:0]};
+  
 wire PC_change;
 assign PC_change = (Zero & PCWriteCond) | PCWrite;
 
